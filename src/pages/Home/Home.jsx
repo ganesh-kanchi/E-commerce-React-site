@@ -4,6 +4,8 @@ import "./Home.css"
 import { categories } from "../../backend/db/categories";
 import { products } from "../../backend/db/products";
 import { Footer } from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
+import { ProductPage } from "../ProductsPage/ProductsPage";
 
 export const Home = ()=>{
     return (
@@ -15,7 +17,7 @@ export const Home = ()=>{
                 </div>
                 <div class="banner-content">
                     <h1 class="banner-heading">Stylish and comfortable <span class="accent-color-text">Jackets</span> for all occasions</h1>
-                    <a href="./pages/product-listing-page/products.html" class="button">Shop Now</a>
+                    <Link to={"products"}> <button class="button">Shop Now </button></Link>
                 </div>
             </div>
             <div class="services-description">

@@ -33,4 +33,10 @@ footer {
 footer .rapid-links a {
     text-decoration: none;
     color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+.rapid-links div{
+    margin-bottom: 0;
 }
