@@ -1,8 +1,10 @@
 import "./App.css";
-import logo from "./logo.png";
+import { Home } from "./pages/Home/Home";
 
 function App() {
-  return <div className="App"></div>
+  return <div className="App">
+    <Home/>
+  </div>
 }
 
 export default App;

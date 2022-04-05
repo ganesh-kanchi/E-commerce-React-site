@@ -1,0 +1,80 @@
+.card-wrapper {
+    background-color: inherit;
+    border: 1px solid var(--primary-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    display: flex;
+}
+
+.card-wrapper .row{
+    display: flex;
+    width: 100%;
+}
+
+.featured-card {
+    align-self: stretch;
+    height: -webkit-max-content;
+    height: max-content;
+    margin: 0;
+    max-width: inherit;
+}
+
+.featured-card .card-main {
+    display: inline-block;  
+    padding: 1rem;
+    width: 100%;
+}
+
+.featured-grid .card-txt-badge {
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.basic-card .heading {
+    display: inline-block;
+    width: 100%;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    font-weight: 400;
+    overflow: hidden;
+
+}
+
+.basic-card .card-content, .basic-card .card-heading {
+    padding: 0.5rem 0.5rem 0;
+}
+
+.featured-grid .card-content {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.card-content .price {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.featured-grid button {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.featured-grid img {
+    max-width: 50%;
+    transform: scale(0.9);
+    /* width: 40%; */
+    height: 15rem;
+}
