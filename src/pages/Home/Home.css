@@ -1,0 +1,111 @@
+.banner-container {
+    z-index: 1;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 31.25rem;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 31.25rem;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+
+.services-description {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem,1fr));
+    place-items: center;
+    margin: 2.5rem;
+    text-align: center;
+}
+
+.services-description .service {
+    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .service-icon {
+    color: var(--primary-color);
+    margin: auto;
+    font-size: 2.5rem;
+}
+
+.main-categories, .featured-category {
+    margin: 2rem;
+}
+
+.main-categories .heading-2,.featured-category .heading-2 {
+    font-size: var(--heading-2);
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.category-grid, .featured-grid {
+    gap: 1rem;
+}
+
+.categories-container {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.category {
+    position: relative;
+    object-fit: cover;
+}
+
+.category .category-image{
+    border-radius: var(--border-radius);
+    height: 25rem;
+    object-fit: cover;
+    opacity: .5;
+    width: 100%;
+    
+}
+
+.overlay-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.category{
+    border: 2px solid var(--primary-color);
+}
+
+.grid-two-col {
+    display: grid;
+    width: 100%;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media screen and (max-width: 600px){
+.categories-container {
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    padding: 0;
+}}
