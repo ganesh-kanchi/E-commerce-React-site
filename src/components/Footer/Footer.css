@@ -1,0 +1,36 @@
+.socials i{
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin: 0.5rem;
+}
+
+footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--off-white);
+    opacity: 1;
+}
+
+.about {
+    display: grid;
+}
+
+.about .brand-tag{
+    font-weight: bold;
+    margin-left: auto;
+}
+
+.about > *, .rapid-links > *, .contact > * {
+    padding: 4px;
+}
+
+footer .rapid-links a {
+    text-decoration: none;
+    color: var(--black);
+}
