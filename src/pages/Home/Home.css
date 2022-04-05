@@ -44,7 +44,7 @@
 }
 
 .main-categories, .featured-category {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 .main-categories .heading-2,.featured-category .heading-2 {
@@ -72,7 +72,7 @@
 
 .category .category-image{
     border-radius: var(--border-radius);
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
     opacity: .5;
     width: 100%;

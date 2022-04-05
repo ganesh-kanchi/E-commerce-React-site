@@ -8,6 +8,7 @@
 
 .card-wrapper .row{
     display: flex;
+    width: 100%;
 }
 
 .featured-card {
@@ -19,7 +20,9 @@
 }
 
 .featured-card .card-main {
+    display: inline-block;  
     padding: 1rem;
+    width: 100%;
 }
 
 .featured-grid .card-txt-badge {
@@ -31,6 +34,7 @@
 }
 
 .basic-card .heading {
+    display: inline-block;
     width: 100%;
     line-clamp: 2;
     -webkit-line-clamp: 2;
@@ -38,6 +42,7 @@
     display: -webkit-box;
     font-weight: 400;
     overflow: hidden;
+
 }
 
 .basic-card .card-content, .basic-card .card-heading {
@@ -57,18 +62,19 @@
 .featured-grid button {
     font-size: 1rem;
     margin-top: 0.5rem;
-    padding: 0.25rem;
+    padding: 0.5rem;
     width: 100%;
 }
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--white);
-    border-radius: var(--border-radius);
+    border: none;
+    border-radius: 0.5rem;
 }
 
 .featured-grid img {
     max-width: 50%;
     transform: scale(0.9);
-    width: 40%;
+    /* width: 40%; */
     height: 15rem;
 }
