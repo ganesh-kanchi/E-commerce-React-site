@@ -1,7 +1,7 @@
 import "./Horizontal-Card.css"
 
 export const HorizontalCard = ({product})=>{
-    const { _id, name, price, image ,categoryName } = product;
+    const {  name, price, image ,categoryName } = product;
     return (
     <div class="card-wrapper basic-card card-horizontal featured-card">
         <div class="row">
