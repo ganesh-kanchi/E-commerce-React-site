@@ -1,11 +1,10 @@
+import "./Home.css"
 import { Navbar } from "../../components/Navbar/Navbar"
 import { HorizontalCard } from "../../components/Horizontal Card/Horizontal-Card";
-import "./Home.css"
 import { categories } from "../../backend/db/categories";
 import { products } from "../../backend/db/products";
 import { Footer } from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
-import { ProductPage } from "../ProductsPage/ProductsPage";
 
 export const Home = ()=>{
     return (

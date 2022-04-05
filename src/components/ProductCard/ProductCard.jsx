@@ -3,7 +3,7 @@ import "./ProductCard.css"
 export const ProductCard = (props) => {
     const { image, name, categoryName, _id, price} = props.data;
     return (<div class="card-component" key={_id}>
-    <img className="card-image resp-image" src={image} alt="Jackets image"/>
+    <img className="card-image resp-image" src={image} alt={`${name} for ${categoryName}`}/>
     <h4 class="card-badge"><i className="fa-solid fa-heart"></i></h4>
     <div class="card-content">
         <h2 class="card-heading">{name} for {categoryName}</h2>

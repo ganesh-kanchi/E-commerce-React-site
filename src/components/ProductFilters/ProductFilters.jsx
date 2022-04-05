@@ -4,7 +4,7 @@ export const ProductFilters = () => {
     return (<aside class="product-sidebar">
     <div class="title">
         <div class="heading-3">Filters</div>
-        <div class="clear-container"><a href="" class="clear-filter">Clear</a></div>
+        <div class="clear-container"><button class="clear-filter">Clear</button></div>
     </div>
     <div class="filters">
         <div class="filter-container">
