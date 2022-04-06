@@ -1,0 +1,54 @@
+.product-sidebar, .product-wrapper {
+    padding: 1rem 0;
+    overflow-y: auto;
+}
+
+.product-sidebar .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    padding: 0.75rem 2rem;
+}
+
+.filter-container, .title {
+    padding: 0.75rem 2rem;
+}
+
+.filter-container, .title {
+    padding: 0.75rem 2rem;
+}
+
+.filter-container .filter-title {
+    font-size: var(--heading-3);
+}
+
+.filter-container .filter-value {
+    padding: 0.5rem 0;
+    font-size: var(--heading-4);
+    color: var(--secondary-color);
+}
+
+.filter-category > *, .filter-rating > *, .filter-sort > * {
+    display: block;
+    padding: 0.25rem;
+}
+
+.product-sidebar {
+    height: 90vh;
+    left: 0px;
+    margin-bottom: 1rem;
+    position: sticky;
+    border-right: 1px solid var(--bg-secondary);
+}
+
+.filter-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-value > input {
+    width: 100%;
+}

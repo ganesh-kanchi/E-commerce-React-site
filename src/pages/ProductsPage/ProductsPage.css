@@ -1,0 +1,15 @@
+.product-sidebar, .product-container {
+    overflow-y: auto;
+    padding-top: 0.25rem;
+}
+
+section.product-container {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: 300px 1fr;
+}
+
+main.main-section {
+    flex-grow: 1;
+    margin-top: 1rem;
+}
