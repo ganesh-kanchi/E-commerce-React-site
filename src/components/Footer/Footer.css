@@ -21,6 +21,10 @@ footer {
     display: grid;
 }
 
+.socials a i:hover{
+    color: var(--hover-effect);
+}
+
 .about .brand-tag{
     font-weight: bold;
     margin-left: auto;
@@ -39,4 +43,14 @@ footer .rapid-links a {
 
 .rapid-links div{
     margin-bottom: 0;
+}
+
+@media screen and (max-width: 700px){
+    footer{
+        grid-template-columns: repeat(1,1fr);
+        text-align: left;
+    }
+    footer .about .brand-tag{
+        margin-left: 0
+    }
 }
