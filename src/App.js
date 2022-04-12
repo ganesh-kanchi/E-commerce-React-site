@@ -1,12 +1,8 @@
 import "./App.css";
-import { Home } from "./pages/Home/Home";
-import {Routes, Route} from "react-router-dom"
-import { Navbar } from "./components/Navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
-import { ProductsPage } from "./pages/ProductsPage/ProductsPage";
-import { Login } from "./pages/auth/Login";
-import { Logout } from "./pages/auth/Logout";
-import { SignUp } from "./pages/auth/Sign-up";
+import { Home, ProductsPage } from "./pages/index";
+import {Routes, Route} from "react-router-dom";
+import { Navbar,Footer } from "./components/index";
+import { Login, Logout, SignUp } from "./pages/auth/index";
 
 
 function App() {
