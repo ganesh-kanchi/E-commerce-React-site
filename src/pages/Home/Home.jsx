@@ -1,15 +1,12 @@
 import "./Home.css"
-import { Navbar } from "../../components/Navbar/Navbar"
 import { HorizontalCard } from "../../components/Horizontal Card/Horizontal-Card";
 import { categories } from "../../backend/db/categories";
 import { products } from "../../backend/db/products";
-import { Footer } from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 
 export const Home = ()=>{
     return (
         <div>
-            <Navbar/>
             <div class="banner-container">
                 <div class="banner-background">
                     <img class="banner-image" src="/assets/amanda-vick-ohWf6YuzOQk-unsplash.jpg" alt="jackets collection "/>
@@ -68,8 +65,6 @@ export const Home = ()=>{
                     {products.slice(0,4).map(product=><HorizontalCard product={product} key={product.id}/>)}
                 </div>
             </div>
-
-            <Footer/>
     </div>
     )
 }

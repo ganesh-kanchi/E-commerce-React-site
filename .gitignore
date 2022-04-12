@@ -21,9 +21,4 @@ yarn-debug.log*
 yarn-error.log*
 *.old
 node_modules/.cache/.eslintcache
-node_modules/.cache/.eslintcache
-*.pack
-*.pack
-node_modules/.cache/.eslintcache
-*.pack
 *.pack

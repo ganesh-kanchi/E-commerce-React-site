@@ -8,6 +8,20 @@
   background-color: var(--primary-color);
 }
 
+.nav-bar .brand-tag:hover{
+  color: var(--white);
+}
+
+.nav-links i:hover{
+  color: var(--white);
+}
+
+
+.nav-links a.button:hover{
+  color: var(--hover-effect);
+  background-color: var(--white);
+}
+
 .icon-container i{
   color: var(--hover-effect);
 }
@@ -18,4 +32,36 @@
 
 .icon-container .icon-badge{
   font-size: 1rem;
+}
+
+@media screen and (max-width: 700px){
+  .nav-links *{
+    margin: 8px 4px 8px 4px;
+  }
+
+  .nav-bar .brand-tag{
+    margin: 0 auto 0 0 ;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .nav-links .icon-container{
+    font-size: 0.8rem;
+    padding: auto;
+    padding-top: 1rem;
+  }
+
+  .nav-links .icon-badge{
+    width: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-links{
+    justify-content: center;
+  }
+
+  .nav-links .button{
+    padding: 8px;
+    font-size: 1rem;
+  }
 }
