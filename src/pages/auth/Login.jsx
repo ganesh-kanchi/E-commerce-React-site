@@ -25,7 +25,7 @@ export const Login = ()=>{
                           <button class="button outline">Login as a Guest</button>
                           <div class="card-action">
                               <span>Don't have an Account?</span>
-                              <Link to={"sign-up"} class="link">SignUp</Link>
+                              <Link to={"/sign-up"} class="link">SignUp</Link>
                           </div>
                         <div class="input-validation-none"></div>
                 </div>
