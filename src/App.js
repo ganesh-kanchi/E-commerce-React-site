@@ -5,7 +5,6 @@ import { Navbar, Footer } from "./components/index";
 import { Login, Logout, SignUp } from "./pages/auth/index";
 import MockmanEs from "mockman-js";
 
-
 function App() {
   return <div className="App">
     <Navbar/>
