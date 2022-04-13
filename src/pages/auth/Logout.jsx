@@ -6,9 +6,9 @@ export const Logout = ()=>{
         <div className="page-container">
             <div className="card-component auth-card">
                 <div className="success-icon">
-                    <i class="fa-solid fa-check-circle"></i>
+                    <i className="fa-solid fa-check-circle"></i>
                 </div>
-                <div class="card-content heading-3">
+                <div className="card-content heading-3">
                     You have successfully been logged out!
                 </div>
                 <Link to={"/"}>Get back to Home</Link>

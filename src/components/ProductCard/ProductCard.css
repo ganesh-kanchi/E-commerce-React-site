@@ -12,7 +12,8 @@
 }
 
 .card-component{
-    box-shadow: 1px 1px 1px var(--primary-color), -1px -1px 1px var(--hover-effect) ;
+    border: 1px solid var(--primary-color) ;
+    box-shadow: none;
 }
 
 .card-content .card-heading {
@@ -38,9 +39,10 @@
     font-size: 0.90rem;
 }
 
-.product-price .discount{
+.card-content .discount{
     color: var(--success-bg-color);
     font-weight: bold;
+    margin-bottom: 4px;
 }
 
 

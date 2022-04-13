@@ -1,12 +1,9 @@
 import "./App.css";
-import { Home } from "./pages/Home/Home";
+import { Home, ProductsPage } from "./pages/index";
 import {Routes, Route} from "react-router-dom"
-import { Navbar } from "./components/Navbar/Navbar";
-import { Footer } from "./components/Footer/Footer";
-import { ProductsPage } from "./pages/ProductsPage/ProductsPage";
-import { Login } from "./pages/auth/Login";
-import { Logout } from "./pages/auth/Logout";
-import { SignUp } from "./pages/auth/Sign-up";
+import { Navbar, Footer } from "./components/index";
+import { Login, Logout, SignUp } from "./pages/auth/index";
+import MockmanEs from "mockman-js";
 
 
 function App() {
@@ -14,6 +11,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/mockman" element={<MockmanEs/>} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
