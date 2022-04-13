@@ -10,8 +10,8 @@ export const ProductCard = (props) => {
                     <div class="card-content">
                         <h2 class="card-heading">{`${name} for ${categoryName}`}</h2>
                         <div class="product-price">
-                            <div class="price">{price}</div>
-                            <div class="previous-price">{prevPrice}</div>
+                            <div class="price">{`₹ ${price}`}</div>
+                            <div class="previous-price">{`₹ ${prevPrice}`}</div>
                         </div>
                         <div class="discount">{discountPercent}% off</div>
                         
