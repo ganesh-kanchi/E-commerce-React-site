@@ -1,0 +1,21 @@
+.products-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 300px));
+    justify-content: space-around;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.wishlist-container{
+    max-width: 80%;
+    margin: auto;
+}
+
+
+.wishlist-container .heading-3{
+    text-align: center;
+}
+
+.wishlist-container .text-center p {
+    margin: 1rem;
+}

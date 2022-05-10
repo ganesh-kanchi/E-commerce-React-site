@@ -16,6 +16,18 @@
     box-shadow: none;
 }
 
+.card-component .card-overlay{
+    background-color: var(--hover-effect);
+    box-shadow: none;
+    border-radius: 5px;
+
+}
+
+.card-component .text-overlay-card-component{
+    background-color: var(--off-white);
+}
+
+
 .card-content .card-heading {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
