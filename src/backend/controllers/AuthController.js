@@ -70,10 +70,9 @@ export const loginHandler = function (schema, request) {
       );
     }
     if (password === foundUser.password) {
-      const secret = process.env.REACT_APP_JWT_SECRET
       const encodedToken = sign(
         { _id: foundUser._id, email },
-        secret
+        process.env.REACT_APP_JWT_SECRET
       );
       foundUser.password = undefined;
       return new Response(200, {}, { foundUser, encodedToken });
