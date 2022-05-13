@@ -33,7 +33,7 @@ const ProductsProvider = ({ children }) => {
                 setLoading(false);
                 console.error(err)
             }
-        })();
+        })();//eslint-disable-next-line
     },[]);
 
     return (
