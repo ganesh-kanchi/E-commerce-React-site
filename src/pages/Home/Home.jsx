@@ -1,10 +1,14 @@
 import "./Home.css"
 import { HorizontalCard } from "../../components/Horizontal Card/Horizontal-Card";
 import { categories } from "../../backend/db/categories";
-import { products } from "../../backend/db/products";
 import { Link } from "react-router-dom";
+import { useProducts } from "../../contexts";
 
 export const Home = ()=>{
+    const {productState, productDispatch, filterTypes} = useProducts();
+    const {CATEGORY, RESET_FILTERS} = filterTypes;
+
+
     return (
         <div>
             <div className="banner-container">
@@ -46,12 +50,23 @@ export const Home = ()=>{
                 <div className="categories-container">
                 {
                     categories.map(category=>
-                        <a href="./pages/product-listing-page/products.html" key={category.id}>
-                        <div className="category">
+                        <Link to="/products" key={category.id}>
+                        <div className="category"
+                            onClick={()=>{
+                                productDispatch({
+                                    type:RESET_FILTERS,
+                                    payload: {data: productState.products}
+                                });
+                                productDispatch({
+                                    type: CATEGORY,
+                                    payload: {value: category.categoryName}
+                                })
+                            }}
+                        >
                             <img className="category-image responsive-image" src={category.image} alt={category.categoryName==="kids"?`${category.categoryName} Jackets`:`${category.categoryName}'s Jackets`}/>
                             <div className="overlay-container">{category.categoryName}</div>
                         </div>
-                    </a>
+                    </Link>
                     )
                 }
                     
@@ -62,7 +77,7 @@ export const Home = ()=>{
             <div className="featured-category">
                 <div className="heading-2">Featured:</div>
                 <div className="grid grid-two-col featured-grid">
-                    {products.slice(0,4).map(product=><HorizontalCard product={product} key={product.id}/>)}
+                    {productState.products.slice(0,4).map(product=><HorizontalCard product={product} key={product.id}/>)}
                 </div>
             </div>
     </div>

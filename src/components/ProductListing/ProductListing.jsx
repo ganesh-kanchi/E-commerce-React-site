@@ -58,7 +58,7 @@ const ProductListing = () => {
         
       ) : (
         <p className="text-center">
-          Whoops! We don't have any products that match your preference :(
+          Whoops! We don't have any products that match your preference
         </p>
       )}
         

@@ -34,7 +34,7 @@ const ProductsProvider = ({ children }) => {
                 console.error(err)
             }
         })();
-    },[DISPLAY_PRODUCTS]);
+    },[]);
 
     return (
         <ProductsContext.Provider 

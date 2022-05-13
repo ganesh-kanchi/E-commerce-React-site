@@ -1,0 +1,71 @@
+.card-content .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-main-content .card-image {
+    width: 50%;
+    flex-shrink: 1;
+    border-radius: 2% 0 0 0;
+}
+
+.card-main-content{
+    margin: 0;
+}
+
+.cart-products .card-quantity {
+    font-size: 14.4px;
+    padding-top: 4px;
+}
+
+.cart-products .minus, .cart-products .plus {
+    font-weight: bold;
+    margin: 0 4px;
+    padding: 0 7px;
+    border-radius: 50%;
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.horizontal-card .card-content{
+    padding-right: 8px;
+}
+
+.horizontal-card .card-main-content .card-image{
+    border-radius: 4px 0 0 4px;
+}
+
+.cart-products .button {
+    margin: 8px 8px 0 0;
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.cart-products .card-component .button{
+    border-radius: 4px;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.card-component .button-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--white);
+}
+
+.button:active {
+    transform: translateY(4px);
+}
+
+.button-primary:hover {
+    background-color: var(--hover-effect);
+}
+
+.card-component .button-outline:hover {
+    border: 2px solid var(--hover-effect);
+    color: var(--hover-effect);
+}
