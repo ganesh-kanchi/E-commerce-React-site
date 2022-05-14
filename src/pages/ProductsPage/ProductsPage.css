@@ -9,6 +9,12 @@ section.product-container {
     grid-template-columns: 300px 1fr;
 }
 
+@media screen and (max-width: 700px) {
+    section.product-container {
+        grid-template-columns: 1fr;
+    }    
+}
+
 main.main-section {
     flex-grow: 1;
     margin-top: 1rem;
