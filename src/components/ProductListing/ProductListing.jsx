@@ -1,11 +1,11 @@
 import "./ProductListing.css";
 import { ProductCard } from "../ProductCard/ProductCard";
 import { useProducts } from "../../contexts";
-import { brandFiltered, categoriesFiltered, sortFiltered, ratingFiltered, stockFiltered, priceRangeFiltered } from "../../utilities/index";
+import { brandFiltered, categoriesFiltered, sortFiltered, ratingFiltered, stockFiltered, priceRangeFiltered, searchFiltered } from "../../utilities";
 
 const ProductListing = () => {
 
-    const { productState, loading, filterVisibilityToggle, filterVisible } = useProducts();
+    const { productState, loading, filterVisibilityToggle, filterVisible, searchValue } = useProducts();
 
     const {
         products,
@@ -17,7 +17,8 @@ const ProductListing = () => {
         priceRange,
       } = productState;
 
-      const brandedProducts = brandFiltered(brand, products);
+      const searchedProducts = searchFiltered(products, searchValue)
+      const brandedProducts = brandFiltered(brand, searchedProducts);
       const categorizedProducts = categoriesFiltered(category, brandedProducts);
       const sortedProducts = sortFiltered(sortBy, categorizedProducts);
       const ratedProducts = ratingFiltered(rating, sortedProducts);

@@ -2,24 +2,27 @@ import { Login, Logout, SignUp } from "../pages/Auth";
 import Mockman from "mockman-js";
 import { WishList } from "../pages/WishList/WishList";
 import { Home, ProductsPage } from "../pages";
-import {Routes, Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import { LockedRoute } from "./LockedRoutes";
 import { Cart } from "../pages/Cart/Cart"
+import { SingleProductPage } from "../pages/SingleProductPage/SingleProductPage";
+import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 
 const AllRoutes = () => {
-    return (
-        <Routes>
-        <Route key="home" path="/" element={<Home/>} />
-        <Route key="mockman" path="/mockman" element={<Mockman/>} />
-        <Route key="products" path="/products" element={<ProductsPage />} />
-        <Route key="login" path="/login" element={<Login/>} />
-        <Route key="logout" path="/logout" element={<Logout/>} />
-        <Route key="signup" path="/sign-up" element={<SignUp/>} />
-        <Route key="WishList" path="/wishlist" element={<LockedRoute><WishList/></LockedRoute>}/>
-        <Route key="Cart" path="/cart" element={<LockedRoute><Cart/></LockedRoute>}/>
-        
+  return (
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<ErrorPage />} />
+        <Route path="/mockman" element={<Mockman />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<Logout />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/wishlist" element={<LockedRoute><WishList /></LockedRoute>} />
+        <Route path="/cart" element={<LockedRoute><Cart /></LockedRoute>} />
+        <Route path="/products/:productId" element={<SingleProductPage />} />
       </Routes>
-    )
+  )
 }
 
 export { AllRoutes }
