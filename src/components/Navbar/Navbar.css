@@ -8,6 +8,25 @@
   background-color: var(--primary-color);
 }
 
+.nav-bar input{
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+.nav-bar * {
+  margin-top: 0;
+  margin-bottom: 0;
+  /* padding: 8px; */
+}
+
+.nav-bar .brand-tag{
+  padding: 10px;
+}
+
+.nav-bar .nav-btn{
+  padding: 8px 0.75rem;
+}
+
 .nav-bar .brand-tag:hover{
   color: var(--white);
 }

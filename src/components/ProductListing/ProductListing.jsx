@@ -1,6 +1,6 @@
 import "./ProductListing.css";
 import { ProductCard } from "../ProductCard/ProductCard";
-import { useProducts } from "../../contexts/productsContext";
+import { useProducts } from "../../contexts";
 import { brandFiltered, categoriesFiltered, sortFiltered, ratingFiltered, stockFiltered, priceRangeFiltered } from "../../utilities/index";
 
 const ProductListing = () => {
@@ -37,7 +37,7 @@ const ProductListing = () => {
               onClick={filterVisibilityToggle}
               title="Filters"
             >
-              <i on className="fa-solid fa-sliders" aria-hidden="true"></i>
+              <i className="fa-solid fa-sliders" aria-hidden="true"></i>
           </button>
             
       </div>

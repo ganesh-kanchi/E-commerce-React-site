@@ -78,6 +78,19 @@
     color: var(--primary-color);
 }
 
+.auth-card .password-toggle {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.auth-card .password-toggle i {
+    color: var(--primary-color);
+    position: absolute;
+    right: 1rem;
+    z-index: 2;
+}
+
 .auth-card{
     display: flex;
     align-items: center;

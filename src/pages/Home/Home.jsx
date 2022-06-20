@@ -13,7 +13,7 @@ export const Home = ()=>{
                 </div>
                 <div className="banner-content">
                     <h1 className="banner-heading">Stylish and comfortable <span className="accent-color-text">Jackets</span> for all occasions</h1>
-                    <Link to={"products"}> <button className="button">Shop Now </button></Link>
+                    <Link to={"products"} key="Products-page"> <button className="button">Shop Now </button></Link>
                 </div>
             </div>
             <div className="services-description">
