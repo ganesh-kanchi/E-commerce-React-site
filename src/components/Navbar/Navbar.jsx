@@ -37,7 +37,7 @@ const Navbar = () => {
             </Link>        
             <Link to={"/cart"} className="icon-container">
 				<i className="fas fa-2xl fa-shopping-cart"></i>
-                {isAuthenticated && cartState.length > 0 ? <span className="icon-badge">{cartState.length}</span> : null}
+                {isAuthenticated && cartState.length > 0 && <span className="icon-badge">{cartState.length}</span> }
             </Link>
         </div>
     </nav>
