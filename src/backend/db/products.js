@@ -9,12 +9,12 @@ export const products = [
   {
     _id: uuid(),
     discountPercent: "64",
-    prevPrice:599,
+    prevPrice:2440,
     brand: "CAMPUS SUTRA",
     isInStock: true,
     name: "Zip-Front Bomber Jacket with Insert Pockets",
     rating: 3.5 ,
-    price: 2440,
+    price: 599,
     categoryName: "men",
     image:"https://assets.ajio.com/medias/sys_master/root/20220303/Gqic/62205725f997dd03e2fe3cb7/campus_sutra_blue_zip-front_bomber_jacket_with_insert_pockets.jpg"
   },
@@ -33,24 +33,24 @@ export const products = [
   {
     _id: uuid(),
     discountPercent: "64",
-    prevPrice:599,
+    prevPrice:2260,
     brand: "ALLEN SOLLY",
     isInStock: false,
     name: "Zip-Front Jacket with Insert Pockets",
     rating: 4.3 ,
-    price: 2260,
+    price: 599,
     categoryName: "men",
     image:"https://assets.ajio.com/medias/sys_master/root/20211101/VLmQ/617fdd4df997ddf8f1f50a4f/campus_sutra_brown_zip-front_jacket_with_insert_pockets.jpg"
   },
   {
     _id: uuid(),
     discountPercent: "64",
-    prevPrice:599,
+    prevPrice:2260,
     brand: "CAMPUS SUTRA",
     isInStock: true,
     name: "Zip-Front Bomber Jacket with Insert Pockets",
     rating: 4.3 ,
-    price: 2260,
+    price: 599,
     categoryName: "men",
     image:"https://assets.ajio.com/medias/sys_master/root/20220303/QS6C/62205632aeb26921afc49f95/-473Wx593H-463599656-brown-MODEL7.jpg"
   },

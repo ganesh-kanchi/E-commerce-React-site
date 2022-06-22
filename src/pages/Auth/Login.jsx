@@ -22,7 +22,6 @@ export const Login = ()=>{
 
         try {
             setLoading(true);
-            console.log(login.input)
             const { data } = await loginRequest(login.input);
             setLoading(false);
 

@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ProductsProvider } from "./contexts/productsContext";
 import { AuthenticationProvider } from "./contexts";
 import { WishListProvider } from "./contexts/wishlistContext";
-// require('dotenv').config()
+import { CartProvider } from "./contexts/cartContext";
 
 // Call make Server
 makeServer();
@@ -17,7 +17,9 @@ ReactDOM.render(
       <AuthenticationProvider>
         <ProductsProvider>
           <WishListProvider>
-            <App />
+            <CartProvider>
+              <App />
+            </CartProvider>
           </WishListProvider>
         </ProductsProvider>
       </AuthenticationProvider>

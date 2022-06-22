@@ -1,14 +1,16 @@
 import "./ProductCard.css"
 import { useWishList } from "../../contexts/wishlistContext";
-import { useAuth } from "../../contexts";
+import { useAuth, useCart } from "../../contexts";
 
-export const ProductCard = (props) => {
-    const { image, name, categoryName, _id, price, prevPrice, discountPercent, isInStock, brand} = props.product;
-    const { isAuthenticated } = useAuth();
-    const { wishlistState, toggleWishlist, loading} = useWishList();
+export const ProductCard = ({ product }) => {
+    const { image, name, categoryName, _id, price, prevPrice, discountPercent, isInStock, brand } = product;
+    const { isAuthenticated, navigation } = useAuth();
 
-    const itemInWishlist = wishlistState.find((item) => item._id === _id);
-    console.log(itemInWishlist)
+    const { wishlistState, toggleWishlist, loading } = useWishList();
+    const itemInWishlist = wishlistState.find((wishListItem) => wishListItem._id === _id);
+
+    const { cartState, addToCartHandler, Loading: cartLoading} = useCart();
+    const itemInCart = cartState.find((cartItem)=> cartItem._id === _id);
 
     return (
 
@@ -17,7 +19,7 @@ export const ProductCard = (props) => {
 	        <div className={`card-content-container ${ !isInStock ? "text-overlay-card-component" : null}`}>
                     <img className="card-image" src={image} alt={name}/>
                     <button className="card-badge" 
-                        onClick={() => toggleWishlist(props.product)}
+                        onClick={() => toggleWishlist(product)}
                         disabled={loading}
                     >
                         <i className={ isAuthenticated && itemInWishlist ? "fa-solid fa-heart" : "fa-regular fa-heart"}></i></button>
@@ -30,7 +32,9 @@ export const ProductCard = (props) => {
                         <div className="discount">{discountPercent}% off</div>
                         
                         <div className="UI-Interaction">
-                            <button className="card-buttons button">Add to Cart</button>
+                            <button className="card-buttons button" disabled={cartLoading} onClick={()=> isAuthenticated && itemInCart ? navigation("/cart") : addToCartHandler(product)}>
+                                { isAuthenticated && itemInCart ? "Go To Cart" :"Add to Cart" }
+                            </button>
                         </div>
                     </div>
             </div>

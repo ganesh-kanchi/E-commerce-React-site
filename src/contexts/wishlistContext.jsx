@@ -26,7 +26,7 @@ const WishListProvider = ({ children }) => {
                 console.error(err);
             }
         } //eslint-disable-next-line
-    }, []);
+    }, [isAuthenticated]);
 
     const toggleWishlist = async (product) => {
         if (isAuthenticated) {

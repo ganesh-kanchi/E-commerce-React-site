@@ -20,7 +20,7 @@
     background-color: var(--hover-effect);
     box-shadow: none;
     border-radius: 5px;
-
+    z-index: 1;
 }
 
 .card-component .text-overlay-card-component{
@@ -65,4 +65,8 @@
     align-items: center;
     margin: 0.5rem ;
     margin-left: 0;
+}
+
+.UI-Interaction .card-buttons:hover {
+    background-color: var(--primary-color);
 }

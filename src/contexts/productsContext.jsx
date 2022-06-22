@@ -33,8 +33,8 @@ const ProductsProvider = ({ children }) => {
                 setLoading(false);
                 console.error(err)
             }
-        })();
-    },[DISPLAY_PRODUCTS]);
+        })();//eslint-disable-next-line
+    },[]);
 
     return (
         <ProductsContext.Provider 

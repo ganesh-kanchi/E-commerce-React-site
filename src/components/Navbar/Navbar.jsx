@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { useAuth } from "../../contexts/authContext"
 import { useWishList } from "../../contexts/wishlistContext";
+import { useCart } from "../../contexts";
 
 const Navbar = () => {
 
     const { isAuthenticated, setIsAuthenticated } = useAuth();
     const { wishlistState } = useWishList();
+    const { cartState } = useCart();
 
   return (
     <nav className="nav-bar">
@@ -24,7 +26,7 @@ const Navbar = () => {
                     setIsAuthenticated(false);
                 }}>
                 Logout</Link>) :
-                (<Link to={"/login"} className="button">Login</Link>)}
+                (<Link to={"/login"} className="button nav-btn">Login</Link>)}
 
 
             <Link to={"/wishlist"} className="icon-container">
@@ -33,7 +35,7 @@ const Navbar = () => {
             </Link>        
             <Link to={"/cart"} className="icon-container">
 				<i className="fas fa-2xl fa-shopping-cart"></i>
-                <span className="icon-badge">2</span>
+                {isAuthenticated && cartState.length > 0 && <span className="icon-badge">{cartState.length}</span> }
             </Link>
         </div>
     </nav>

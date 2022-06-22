@@ -1,0 +1,50 @@
+.cart-transactions {
+    background-color: var(--white);
+    padding: 0 1rem 1rem;
+    height: max-content;
+    position: sticky;
+    top: 4rem;
+}
+
+.cart-transactions .title {
+    font-size: var(--heading-3);
+    font-weight: bold;
+    text-align: center;
+    line-height: var(--line-height-1);
+}
+
+.cart-transactions .price, .cart-transactions .total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.cart-transactions .price{
+    font-size: 1rem;
+}
+
+.cart-transactions .total-price{
+    font-weight: bold;
+}
+
+.cart-transactions .discount-msg {
+    padding: 8px 0;
+    font-size: 1rem;
+}
+
+.cart-transactions button {
+    margin: auto;
+    margin-top: 8px;
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+    .cart-transactions{
+        grid-row: 1;
+        position: static;
+    }    
+}
