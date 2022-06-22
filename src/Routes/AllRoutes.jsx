@@ -1,10 +1,9 @@
 import { Login, Logout, SignUp } from "../pages/Auth";
 import Mockman from "mockman-js";
 import { WishList } from "../pages/WishList/WishList";
-import { Home, ProductsPage } from "../pages";
+import { Home, ProductsPage, Cart } from "../pages";
 import {Routes, Route} from "react-router-dom"
 import { LockedRoute } from "./LockedRoutes";
-import { Cart } from "../pages/Cart/Cart"
 
 const AllRoutes = () => {
     return (
