@@ -1,4 +1,4 @@
-const searchFiltered = (products, searchValue) =>{
+const searchFiltered = (products, searchValue) =>{ // eslint-disable-next-line
     return products.filter((product)=>{
         if (searchValue.trim()===""){
             return product
@@ -6,7 +6,7 @@ const searchFiltered = (products, searchValue) =>{
             return product
         }else if (product.brand.toLowerCase().includes(searchValue.toLowerCase().trim())){
           return product;
-        } else return
+        }
     });
 
 }
