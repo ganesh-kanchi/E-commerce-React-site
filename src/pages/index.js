@@ -1,3 +1,6 @@
 export { ProductsPage } from "./ProductsPage/ProductsPage"
 export { Home } from "./Home/Home"
 export { Cart } from "./Cart/Cart"
+export { WishList } from "./WishList/WishList"
+export { SingleProductPage } from "./SingleProductPage/ErrorPage"
+export { ErrorPage } from "./ErrorPage/ErrorPage"
