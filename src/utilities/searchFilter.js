@@ -6,7 +6,7 @@ const searchFiltered = (products, searchValue) =>{
             return product
         }else if (product.brand.toLowerCase().includes(searchValue.toLowerCase().trim())){
           return product;
-        }
+        } else return
     });
 
 }
