@@ -3,13 +3,13 @@
 ## Features
 
 - Landing page
-- Product Listing page
+- Product listing page
 - Sort and filter functionality
 - Authentication
 - Wishlist functionality
 - Cart functionality
-- Single Product page
-- Search fuctionality
+- Single product page
+- Search functionality
 
 ## Built with the help of
 
