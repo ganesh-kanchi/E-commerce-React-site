@@ -17,4 +17,4 @@
 - React Router v6
 - useContext API and useReducer
 - MockBee
-- [Lazy-library](https://lazy-library.netlify.app/) - Component Library
+- [Lazy-library](https://lazylibrary.netlify.app/) - Component Library
