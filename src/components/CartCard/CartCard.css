@@ -9,7 +9,7 @@
     border-radius: 2% 0 0 0;
 }
 
-.card-main-content{
+.card-main-content {
     margin: 0;
 }
 
@@ -18,7 +18,8 @@
     padding-top: 4px;
 }
 
-.cart-products .minus, .cart-products .plus {
+.cart-products .minus,
+.cart-products .plus {
     font-weight: bold;
     margin: 0 4px;
     padding: 0 7px;
@@ -27,11 +28,11 @@
     cursor: pointer;
 }
 
-.horizontal-card .card-content{
+.horizontal-card .card-content {
     padding-right: 8px;
 }
 
-.horizontal-card .card-main-content .card-image{
+.horizontal-card .card-main-content .card-image {
     border-radius: 4px 0 0 4px;
 }
 
@@ -42,7 +43,7 @@
     width: 100%;
 }
 
-.cart-products .card-component .button{
+.cart-products .card-component .button {
     border-radius: 4px;
 }
 
@@ -57,7 +58,7 @@
     background-color: var(--white);
 }
 
-.button:active {
+.card-buttons:active {
     transform: translateY(4px);
 }
 

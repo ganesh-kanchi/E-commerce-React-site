@@ -8,7 +8,7 @@ const ProductsProvider = ({ children }) => {
     const [productState, productDispatch] = useReducer(productsReducer,filterLessProducts);
 
     const [loading, setLoading] = useState(false);
-    const [searchVal, setSearchVal] = useState("")
+    const [searchValue, setSearchValue] = useState("")
     const [filterVisible, setFilterVisibility] = useState(false);
 
 
@@ -45,8 +45,8 @@ const ProductsProvider = ({ children }) => {
                 filterVisibilityToggle,
                 filterVisible,
                 loading,
-                searchVal,
-                setSearchVal
+                searchValue,
+                setSearchValue
             }}
         >
             {children}

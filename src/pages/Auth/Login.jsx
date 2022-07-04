@@ -5,7 +5,7 @@ import { useState } from "react";
 import { loginRequest } from "../../requests/authRequests/loginRequest"
 
 export const Login = ()=>{
-    const { setIsAuthenticated, setToken, navigation } = useAuth();
+    const { setIsAuthenticated, setToken, navigation, location } = useAuth();
 
     const [login, setLogin] = useState({ input: {}, error: "", visible: {password: false} });
 
@@ -31,7 +31,8 @@ export const Login = ()=>{
 
             setLogin({...login, input: { email: "", password: "" } });
             setIsAuthenticated(true);
-            navigation("/");
+            let from = location.state?.from?.pathname || '/';
+            navigation(from, { replace: true });
         } catch (err) {
             setLoading(false);
             setLogin({ ...login, error: err.response.data.errors[0] });

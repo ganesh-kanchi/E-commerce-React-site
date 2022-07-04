@@ -1,0 +1,13 @@
+.error-page{
+    align-items: center;
+    text-align: center;
+}
+
+.error-image{
+    margin: 1.5rem;
+    width: 25rem;
+}
+
+.error-link{
+    display: block;
+}

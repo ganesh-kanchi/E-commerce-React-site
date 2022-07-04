@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { useAuth } from "../../contexts/authContext"
 import { useWishList } from "../../contexts/wishlistContext";
 import { useCart } from "../../contexts";
+import {SearchProducts} from "../SearchProducts/SearchProducts"
 
 const Navbar = () => {
 
@@ -13,9 +14,10 @@ const Navbar = () => {
   return (
     <nav className="nav-bar">
         <Link to={"/"} className="brand-tag">JacketEX</Link>
-        <div className="nav-input input input-basic">
+        {/* <div className="nav-input input input-basic">
             <input type="text" placeholder="Search"/>
-        </div>
+        </div> */}
+        <SearchProducts/>
         <div className="nav-links">
 
 
