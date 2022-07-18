@@ -1,3 +1,20 @@
-## E-Commerce Backend
+## [JacketEx](https://jacket-ex-react.netlify.app/) E-Commerce Store
 
-This folder contains the Mock Backend created for E-Commerce App. It contains different API end-points and database configuration for building E-Commerce; so that you can focus on building Frontend.
+## Features
+
+- Landing page
+- Product listing page
+- Sort and filter functionality
+- Authentication
+- Wishlist functionality
+- Cart functionality
+- Single product page
+- Search functionality
+
+## Built with the help of
+
+- ReactJS
+- React Router v6
+- useContext API and useReducer
+- MockBee
+- [Lazy-library](https://lazylibrary.netlify.app/) - Component Library
